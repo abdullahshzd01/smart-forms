@@ -5,7 +5,7 @@
   "scripts": {
     "compile": "tsup src/index.ts --format cjs,esm --dts --clean --sourcemap",
     "watch": "tsup src/index.ts --format cjs,esm --dts --clean --sourcemap --watch",
-    "build": "npm run compile",
+    "build": "node init && npm run compile",
     "test": "TZ=Australia/Sydney jest --config ./jest.config.ts --coverage"
   },
   "repository": {

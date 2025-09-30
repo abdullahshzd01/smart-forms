@@ -6,12 +6,12 @@
   "scripts": {
     "compile": "tsc",
     "watch": "tsc -w",
-    "build": "npm run compile",
+    "build": "node init && npm run compile",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "storybook dev -p 6006",
     "storybook-watch": "concurrently -n \"STORYBOOK,TSC\" -c \"cyan.bold,green.bold\" \"storybook dev -p 6006\" \"tsc -w\"",
-    "build-storybook": "storybook build",
+    "build-storybook": "node init && storybook build",
     "chromatic": "chromatic --exit-zero-on-changes"
   },
   "license": "Apache-2.0",

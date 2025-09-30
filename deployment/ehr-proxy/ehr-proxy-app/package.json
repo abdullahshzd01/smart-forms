@@ -5,7 +5,7 @@
     "ehr-proxy-app": "bin/ehr-proxy-app.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"

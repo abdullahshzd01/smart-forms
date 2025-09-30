@@ -5,7 +5,7 @@
     "forms-server-app": "bin/forms-server-app.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"

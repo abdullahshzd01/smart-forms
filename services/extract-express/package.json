@@ -5,8 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "compile": "tsc",
-    "start": "node --inspect lib/index.js",
-    "start:watch": "node --inspect --watch lib/index.js",
+    "start": "node init && node --inspect lib/index.js",
+    "start:watch": "node init && node --inspect --watch lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sean Fong",

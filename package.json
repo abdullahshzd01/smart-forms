@@ -7,11 +7,11 @@
     "prettier": "prettier --check .",
     "prettier-fix": "prettier --write .",
     "clean-folders": "find . -type d \\( -name \"node_modules\" -o -name \"dist\" -o -name \"lib\" \\) -exec rm -rf {} +",
-    "build-all-deps-first-run": "npm run build:sdc-assemble && npm run build:sdc-populate && npm run build:sdc-template-extract && npm run  build:smart-forms-renderer",
-    "build:sdc-assemble": "cd packages/sdc-assemble && npm run build",
-    "build:sdc-populate": "cd packages/sdc-populate && npm run build",
-    "build:sdc-template-extract": "cd packages/sdc-template-extract && npm run build",
-    "build:smart-forms-renderer": "cd packages/smart-forms-renderer && npm run build"
+    "build-all-deps-first-run": "node init && npm run build:sdc-assemble && npm run build:sdc-populate && npm run build:sdc-template-extract && npm run  build:smart-forms-renderer",
+    "build:sdc-assemble": "node init && cd packages/sdc-assemble && npm run build",
+    "build:sdc-populate": "node init && cd packages/sdc-populate && npm run build",
+    "build:sdc-template-extract": "node init && cd packages/sdc-template-extract && npm run build",
+    "build:smart-forms-renderer": "node init && cd packages/smart-forms-renderer && npm run build"
   },
   "workspaces": [
     "apps/smart-forms-app",
